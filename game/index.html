@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="《还有一格电》离线视觉小说。">
+  <title>还有一格电｜视觉小说</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="story-data.js" defer></script>
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到游戏内容</a>
+  <main id="main" class="app-shell">
+    <section id="title-screen" class="title-screen" aria-labelledby="game-title">
+      <div class="title-art" aria-hidden="true">
+        <div class="title-road"></div>
+        <div class="title-light"></div>
+        <span class="title-battery">1</span>
+      </div>
+      <div class="title-copy">
+        <p class="eyebrow">2018—2019 · 北京 · 离线视觉小说</p>
+        <h1 id="game-title">还有一格电</h1>
+        <p class="title-description">一辆车、一份工作、几笔要按时记清的钱。</p>
+        <p id="startup-message" class="startup-message" role="status">正在载入剧情数据…</p>
+        <div class="title-actions" aria-label="主菜单">
+          <button id="start-button" class="button button-primary" type="button" disabled>开始游戏</button>
+          <button id="continue-button" class="button" type="button" hidden>继续</button>
+          <button id="chapters-button" class="button" type="button" disabled>章节选择</button>
+          <button id="settings-button" class="button" type="button">设置</button>
+        </div>
+        <p class="keyboard-hint">操作：Enter / 空格继续 · Esc菜单 · H历史 · 方向键选择</p>
+      </div>
+    </section>
+
+    <section id="play-screen" class="play-screen" hidden aria-label="游戏正文">
+      <header class="game-topbar">
+        <button id="menu-button" class="icon-button" type="button" aria-label="打开菜单">菜单</button>
+        <div class="progress-info">
+          <span id="chapter-label">第1章</span>
+          <span id="scene-label">场景 1 / 1</span>
+          <progress id="story-progress" value="0" max="100" aria-label="阅读进度"></progress>
+        </div>
+        <button id="history-button" class="icon-button" type="button" aria-label="打开历史记录">历史</button>
+      </header>
+
+      <section id="scene-stage" class="scene-stage" data-background="station" aria-label="当前场景">
+        <div class="stage-wash" aria-hidden="true"></div>
+        <img id="background-image" class="background-image" alt="" aria-hidden="true">
+        <div class="scene-location" id="scene-location"></div>
+        <div class="portrait-frame" id="portrait-frame" hidden>
+          <img id="portrait-image" class="portrait-image" alt="" aria-hidden="true">
+          <span id="portrait-fallback" class="portrait-fallback" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <article class="narrative-panel">
+        <div class="scene-heading">
+          <p id="scene-chapter" class="eyebrow"></p>
+          <h1 id="scene-title"></h1>
+        </div>
+        <div id="text-content" class="text-content" aria-hidden="true"></div>
+        <p id="screen-reader-text" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
+        <section id="choice-panel" class="choice-panel" aria-label="选择" hidden>
+          <p id="choice-prompt" class="choice-prompt"></p>
+          <div id="choice-options" class="choice-options"></div>
+        </section>
+        <p id="game-status" class="status-message" role="status" aria-live="polite"></p>
+        <div class="advance-row">
+          <span id="speaker-label" class="speaker-label">旁白</span>
+          <button id="advance-button" class="button button-primary" type="button" disabled>继续</button>
+        </div>
+      </article>
+
+      <nav class="game-toolbar" aria-label="阅读控制">
+        <button id="auto-button" class="toolbar-button" type="button" aria-pressed="false">自动：关</button>
+        <button id="skip-button" class="toolbar-button" type="button" aria-pressed="false">已读快进：关</button>
+        <button id="save-button" class="toolbar-button" type="button">存读档</button>
+        <button id="settings-game-button" class="toolbar-button" type="button">设置</button>
+      </nav>
+    </section>
+  </main>
+
+  <dialog id="modal" class="modal" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <h2 id="modal-title"></h2>
+      <button id="modal-close" class="icon-button" type="button" aria-label="关闭">关闭</button>
+    </div>
+    <div id="modal-content" class="modal-content"></div>
+  </dialog>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-label="原创抽象场景背景">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#776547"/><stop offset="1" stop-color="#433c30"/></linearGradient><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#433c30"/><stop offset="1" stop-color="#202624"/></linearGradient><radialGradient id="glow"><stop stop-color="#e2b66f" stop-opacity=".52"/><stop offset="1" stop-color="#e2b66f" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1280" height="520" fill="url(#sky)"/>
+  <circle cx="930" cy="118" r="180" fill="url(#glow)"/>
+  <rect y="300" width="1280" height="220" fill="url(#ground)"/>
+
+          <path d="M0 336h1280v184H0z" fill="#171d1b" opacity=".84"/>
+          <path d="M96 212h410v124H96z" fill="#242a27" stroke="#d2ad70" stroke-opacity=".28"/>
+          <path d="M128 244h342v10H128zM128 278h280v8H128z" fill="#baa16e" opacity=".38"/>
+          <path d="M188 336v-86m92 86v-86m92 86v-86" stroke="#b3a17a" stroke-opacity=".36" stroke-width="8"/>
+          <circle cx="890" cy="292" r="104" fill="none" stroke="#c9b387" stroke-opacity=".3" stroke-width="8"/>
+          <circle cx="890" cy="292" r="18" fill="#d9bd82" fill-opacity=".55"/>
+          <path d="M890 188v208M786 292h208M817 219l146 146m0-146L817 365" stroke="#c9b387" stroke-opacity=".24" stroke-width="5"/>
+
+
+  <path d="M0 472h1280" stroke="#f1dcaf" stroke-opacity=".12" stroke-width="2"/>
+</svg>

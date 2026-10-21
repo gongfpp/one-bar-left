@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" role="img" aria-label="原创人物剪影插画">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#485b61" stop-opacity=".08"/><stop offset="1" stop-color="#202c31" stop-opacity=".2"/></linearGradient><linearGradient id="coat" x2="0" y2="1"><stop stop-color="#596b70"/><stop offset="1" stop-color="#202c31"/></linearGradient></defs>
+  <rect width="360" height="520" fill="url(#bg)"/>
+  <ellipse cx="180" cy="484" rx="140" ry="28" fill="#101516" opacity=".42"/>
+  <path d="M38 520c10-101 51-155 112-178h60c62 22 103 78 112 178z" fill="url(#coat)"/>
+  <path d="M145 328h70l18 41-53 72-53-72z" fill="#d5a183" opacity=".92"/>
+  <ellipse cx="180" cy="190" rx="91" ry="115" fill="#d5a183"/>
+  <path d="M86 198c-1-100 56-152 134-152 78 0 132 56 130 159l-18 100-35 30V171c-39 15-118 16-156-2v166l-37-38z" fill="#29282a"/>
+  <path d="M112 214c12 14 23 20 34 20m68 0c12 0 23-7 34-20" fill="none" stroke="#513a32" stroke-opacity=".38" stroke-width="4" stroke-linecap="round"/>
+  <path d="M155 264c16 11 34 11 50 0" fill="none" stroke="#6f483d" stroke-opacity=".46" stroke-width="4" stroke-linecap="round"/>
+  <path d="M75 418c54-30 156-30 210 0" fill="none" stroke="#d9b774" stroke-opacity=".52" stroke-width="3"/>
+  <path d="M82 378h196" stroke="#e2b66f" stroke-opacity=".18" stroke-width="2"/>
+  <path d="M40 506h280" stroke="#d9b774" stroke-opacity=".18" stroke-width="2"/>
+</svg>
